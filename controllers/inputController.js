@@ -22,14 +22,13 @@ class InputController{
     // convert user Input to number or digit
     convertUserInput(userInput) {
 
-        console.log("i m here");
         let theBuffer = (Buffer.from(userInput));
         let inputCommandCounter = 1;
         let inputArray = new Uint8Array(theBuffer); // store the userInput in array
         let outputArray = new Int8Array(theBuffer); // store the output to be return
 
         let outputIndex = (outputArray.length - 2);
-        outputArray[(outputArray.length - 1)] = -1;
+        outputArray[(outputArray.length - 1)] = - 1;
     
         // convert user input into digits or number
         for (let i = 0; i < inputArray.length; i++) {
@@ -71,9 +70,9 @@ class InputController{
           }
     
           if (userInput[i] === -1) {
-              amaountOfNumbers++;
-              if (amaountOfNumbers > 4)
-              return false;
+                amaountOfNumbers++;
+                if (amaountOfNumbers > 4)
+                    return false;
           }
         }
         if (amaountOfNumbers < 4) {

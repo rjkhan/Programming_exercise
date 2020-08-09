@@ -21,6 +21,8 @@ class InputController{
 
     // convert user Input to number or digit
     convertUserInput(userInput) {
+
+        console.log("i m here");
         let theBuffer = (Buffer.from(userInput));
         let inputCommandCounter = 1;
         let inputArray = new Uint8Array(theBuffer); // store the userInput in array

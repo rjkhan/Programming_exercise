@@ -9,7 +9,13 @@ let matrixController = new MatrixController();
 
 
 // size contains number of rows and number of columns
-matrixController.dimension = new Int16Array(2);
+matrixController.size = new Int16Array(2);
+
+const PROGRAM_STATES = {
+    SAVE_SIZE_AND_POSITION: 1,
+    RUN_PROGRAM: 2,
+    RESTART: 3
+};
 
 const MESSAGES = {
     TYPE_SIZE_POSITION: 'Type the size of the matrix and the position of the object: width,height,x,y',
@@ -35,3 +41,5 @@ const USERDEFINED_COMMANDS = {
 inputController.maxCommandValue = 4;
 
 console.log(MESSAGES.TYPE_SIZE_POSITION);
+
+let programState = PROGRAM_STATES.SAVE_SIZE_AND_POSITION;

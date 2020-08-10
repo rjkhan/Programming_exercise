@@ -2,12 +2,13 @@
 
 ## To download Project use following command 
 
+To download the program run the following command into your `Terminal \ Command Line Cdm` to clone the project on your machine.
 `git clone git@github.com:rjkhan/Programming_exercise.git`
 
-The go to project directory using following command `cd Programming_exercise`. 
+Then go to project directory using following command `cd Programming_exercise` using terminal. 
 
 ## Start Program
-`node .`
+Run the follwoing command in terminal to start program `node .`
 
 Then program display following message > Type the size of the matrix and the position of the object: width,height,x,y
 
@@ -19,4 +20,7 @@ from *stdin* and executed.
 
 ## output 
 
-the output of the program on performing above steps is `[0, 1]`
+The output of the program on performing above steps is `[0, 1]`
+
+## Contact
+For any issue and query create issue on github repo or send me email @ `rabnawazjansher@gmail.com`
